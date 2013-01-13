@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+	background-color: black;
+	color: white;
+	font-size: 13px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #D4A414;
+	text-shadow: 0 0 10px #D4A414;
+	text-decoration: none;
+}

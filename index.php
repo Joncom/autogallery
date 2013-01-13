@@ -7,7 +7,9 @@
 		<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
 		<script type="text/javascript" src="js/lightbox.js"></script>
 
+		<link href="css/reset.css" rel="stylesheet" />
 		<link href="css/lightbox.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 
 	</head>
 
