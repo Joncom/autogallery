@@ -19,7 +19,7 @@
 
 			<?php for( $i = 1; $i <= 3; $i++ ) { ?>
 
-				<a href="images/<?php echo $i; ?>.jpg" rel="lightbox[myset]" title="my caption">image #<?php echo $i; ?></a>
+				<a href="images/<?php echo $i; ?>.jpg" rel="lightbox[myset]" aTitle="this is caption <?php echo $i; ?>">image #<?php echo $i; ?></a>
 
 			<?php } ?>
 
