@@ -37,7 +37,11 @@ $images = getDirectoryList($gallery_dir);
 
 			<?php for( $i = 0; $i < count($images); $i++ ) { ?>
 
-				<a href="<?php echo $gallery_dir . $images[$i]; ?>" rel="lightbox[myset]" aTitle="this is caption <?php echo $i; ?>">image #<?php echo $i; ?></a>
+				<a href="<?php echo $gallery_dir . $images[$i]; ?>" rel="lightbox[myset]" aTitle="this is caption <?php echo $i; ?>">
+
+                    <img src="<?php echo $gallery_dir . $images[$i]; ?>" width="161" height="118">
+
+                </a>
 
 			<?php } ?>
 
