@@ -1,3 +1,22 @@
+<?php
+
+function getDirectoryList ($directory) {
+	$results = array();
+	$handler = opendir($directory);
+	while ($file = readdir($handler)) {
+		if ($file != "." && $file != "..") {
+	    	$results[] = $file;
+		}
+	}
+	closedir($handler);
+	return $results;
+}
+
+$gallery_dir = "./images/gallery/";
+$images = getDirectoryList($gallery_dir);
+
+?>
+
 <html>
 
 	<head>
@@ -16,9 +35,9 @@
 
 		<div id="photos">
 
-			<?php for( $i = 1; $i <= 3; $i++ ) { ?>
+			<?php for( $i = 0; $i <= count($images); $i++ ) { ?>
 
-				<a href="images/<?php echo $i; ?>.jpg" rel="lightbox[myset]" aTitle="this is caption <?php echo $i; ?>">image #<?php echo $i; ?></a>
+				<a href="<?php echo $gallery_dir . $images[$i]; ?>" rel="lightbox[myset]" aTitle="this is caption <?php echo $i; ?>">image #<?php echo $i; ?></a>
 
 			<?php } ?>
 
